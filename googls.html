@@ -4,124 +4,44 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <style>
-        html, body {
-	height:100vh;
-	width:100vw;
-	margin:0;
-	padding:0;
-}
+    <div class="head">
+        <ul class="left">
+            <li><a href="https://www.google.com/intl/en/about/%22%3EAbout</a></li>
+            <li><a href="https://store.google.com/%22%3EStore</a></li>
+        </ul>
+        <ul class=right>
+            <li><a href="https://mail.google.com/%22%3EGmail</a></li>
+            <li><a href="https://images.google.com/%22%3EImages</a></li>
+            <li><a href="https://www.google.com/intl/en/options/%22%3E<img src="https://www.shareicon.net/download/2015/09/12/99848_apps.ico" id="apps"></a></li>
+            <li><a href="https://accounts.google.com/ServiceLogin?hl=en-gb" class="btn" id="btn-blue">Sign in</a></li>
+        </ul>
+    </div>
+    <main>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="logo" />
 
-body {
-	display:grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 50px auto 25px;
-	grid-gap: 1px 1px;
-}
+    <form>
+        <div class="searchbar">
+            <input type="text" name="search" id="search">
+        </div>
+            <img id="voice" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" />
 
-ul, li {
-	display: inline-grid;
-	grid-auto-flow: column;
-	align-self: center;
-	list-style-type: none;
-	margin: 0;
-	padding: 8px;
-}
+        <div class="buttons">
+            <button type="submit" class="btn" value="search">Google Search</button>
+            <button type="submit" class="btn" value="lucky">I'm Feeling Lucky</button>
+        </div>
+    </form>
 
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-.head {
-	z-index: 2;
-	align-self:start;
-}
-
-footer {
-	align-self:end;
-	background-color: #f2f2f2;
-}
-
-main  {
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	transform: translate(0,-20%);
-}
-
-#logo {
-	margin: 20px;
-}
-
-#search {
-	width: 500px;
-	height: 40px;
-	border-radius: 19px;
-    margin: 10px;
-}
-
-#voice {
-	float: right;
-	transform: translate(-10px, -37px);
-	height: 24px;
-
-}
-.buttons {
-	display: flex;
-	justify-content: center;
-	margin: 20px;
-}
-.btn {
-	padding: 10px 15px;
-	margin: 10px;
-	background-color:#F1F1F1;
-	border-style: none;
-	border-radius:3px;
-	color: rgba(0,0,0,0.62);
-	font-weight: bold;
-}
-#btn-blue {
-	background-color:#4285f4;
-	color: #FFFFFF;
-}
-#btn-blue:hover {
-	text-decoration: none;
-}
-#btn-blue:active {
-	background-color:#376fcc;
-}
-.btn:hover {
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.23);
-	color: rgba(0,0,0,0.87);
-}
-
-a {
-	color: rgba(0,0,0,0.87);
-	font-family: arial;
-	font-size: 13px;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-#apps {
-	height:24px;
-	opacity:0.60;
-}
-#apps:hover {
-	opacity:0.80;
-}
-#looks {
-    height:24px;
-    opacity:0.60;
-    width:10px;
-    flood-opacity: 
-}
-
-    </style>
-	
+    </main>
+    <footer>
+        <ul class="left">
+            <li><a href="https://ads.google.com/%22%3EAdvertising</a></li>
+            <li><a href="https://www.google.com/services/%22%3EBusiness</a></li>
+        </ul>
+        <ul class=right>
+            <li><a href="https://policies.google.com/privacy%22%3EPrivacy</a></li>
+            <li><a href="https://policies.google.com/terms%22%3ETerms</a></li>
+            <li><a href="https://www.google.com/preferences%22%3ESettings</a></li>
+        </ul>
+    </footer>
+</body>
+</html>   
